@@ -1,0 +1,68 @@
+# Uli_ocl contracts
+
+## Deploy
+
+```bash
+export PROJECT_ADDRESS=0xf07336E1c77319B4e740b666eb0C2B19D11fc14F
+export PROJECT_REGISTRATION_FEE=1.0
+export PROVER_REGISTRATION_FEE=1.0
+export MIN_STAKE=1.0
+./deploy.sh --network mainnet|testnet|dev
+```
+
+### Deployment
+
+#### Testnet
+
+LivenessVerifier deployed to 0x2eAfC6918B04DBB70F2E1c19D7667cc800E3238e  
+MovementVerifier deployed to 0x2842F0442bA99886503f5d87c9A2868946A433b3  
+MockDapp deployed to 0xAA0cB09c6eed8B43DFb0852b4445C2Db86E85A73  
+MockDappLiveness deployed to 0x24B8D8f110Be334b36ebBA567a423b052444e66B  
+MockDappMovement deployed to 0x799b5dc3fa1F0522F145D37f939187c926f035Bb  
+Uli_oclProject deployed to 0x7D3158166E9298fC47beA036fE162fEA17632E5D  
+ProjectRegistrar deployed to 0xB564996622CE5610b9cF4ed35160f406185d7d0b  
+Uli_oclProject binder set to ProjectRegistrar 0xB564996622CE5610b9cF4ed35160f406185d7d0b  
+ProjectRegistrar registration fee set to 0.0  
+Uli_oclProver deployed to 0x7EdDe171F0944252b5A2CCE5Ef0eD7e13310F67F  
+Uli_oclVMType deployed to 0x2Fb953ca5e7E693a8Ce2C2E26dAE33616980Bc7b  
+Uli_oclDebits deployed to 0x862116BBBBD18Af494A2680D5430C25A9C47ad0a  
+Uli_oclProjectReward deployed to 0x65EE0E96D0818aD43d93ae8089Db5F0d658c0cCc  
+Uli_oclTaskManager deployed to 0xEe96E984E6e746aAbe4a5ef687Ad8bb2aA98bDf3  
+Uli_oclRouter deployed to 0x19dD7163Ad80fE550C97Affef49E1995B24941B1  
+Uli_oclRewardDistributor deployed to 0xe8d9ccb6e7E1c834A1E2E1a6dF3403773eAa580e  
+Uli_oclMinter deployed to 0x7cE64E8a918C9B8b6172043Bb50E99A9AFf72cd1  
+MockIoID deployed to 0xDF505e158Ffe093601494D931924Bb24E8B7B92D  
+Uli_oclRewardDistributor add operator to 0x7cE64E8a918C9B8b6172043Bb50E99A9AFf72cd1  
+Uli_oclTaskManager add operator to 0x7cE64E8a918C9B8b6172043Bb50E99A9AFf72cd1  
+Uli_oclTaskManager add operator to 0x19dD7163Ad80fE550C97Affef49E1995B24941B1  
+Uli_oclRewardDistributor set operator to 0x7cE64E8a918C9B8b6172043Bb50E99A9AFf72cd1  
+Uli_oclDebits set operator to 0xEe96E984E6e746aAbe4a5ef687Ad8bb2aA98bDf3  
+Uli_oclMinter set reward to 0  
+
+#### Mainnet
+
+LivenessVerifier deployed to 0x84Ff49bE3f0DC2c93FfFC4b5CD3f99c7E50e1A84
+MovementVerifier deployed to 0x673ed3C5691821C05F5Fa05a4Db03a6a89280ed1
+MovementBatchVerifier deployed to 0x74b6F0524A5980c43fC6e56715e051cf3630A2c3
+MockDapp deployed to 0x5AbC57C06475F9c6A35a54B1DD0a365E84bf72A0
+MockDappLiveness deployed to 0x5B69cf6D0267142316379F4e818645dB67216aD2
+MockDappMovementBatch deployed to 0xA300DeB486c908dDD5481723d2b8A209c2c40bF3
+Uli_oclProject deployed to 0xee8e318C712aB1731f9c3b708a5Caf2533614AF3
+ProjectRegistrar deployed to 0x97c3696E5f9A17569711B002152fd1603f8F06eB
+Uli_oclProject binder set to ProjectRegistrar 0x97c3696E5f9A17569711B002152fd1603f8F06eB
+ProjectRegistrar registration fee set to 0.0
+Uli_oclProver deployed to 0xD0a8E3317D20fE7546CD7c7d7964d7D4eDf653F1
+Uli_oclVMType deployed to 0xD3E3922f2fF03F6fc677b0820c849079d78b92c4
+Uli_oclDebits deployed to 0x6003dFF453096032FfD35f78C95Aa13093a4bae2
+Uli_oclProjectReward deployed to 0xa80Ac1D881Bb302fDD1c94df528B6bb4b0a29927
+Uli_oclTaskManager deployed to 0x314200F9c4F516131049e92a69731e0ccBC78218
+Uli_oclRouter deployed to 0xeBf9Ab649f9952F9B6e85e59Fac9fED43594e3E0
+Uli_oclRewardDistributor deployed to 0x59F83b20cC6b1872Eea72db3128FF06171db078f
+Uli_oclMinter deployed to 0xD323f014c598f033C40ae2e02Ed971c472a5BBE4
+MockIoID deployed to 0xBe68E2B1584AA8CB4165BdC5665dc0812fBD7776
+Uli_oclRewardDistributor add operator to 0xD323f014c598f033C40ae2e02Ed971c472a5BBE4
+Uli_oclTaskManager add operator to 0xD323f014c598f033C40ae2e02Ed971c472a5BBE4
+Uli_oclTaskManager add operator to 0xeBf9Ab649f9952F9B6e85e59Fac9fED43594e3E0
+Uli_oclRewardDistributor set operator to 0xD323f014c598f033C40ae2e02Ed971c472a5BBE4
+Uli_oclDebits set operator to 0x314200F9c4F516131049e92a69731e0ccBC78218
+Uli_oclMinter set reward to 0

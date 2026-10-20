@@ -1,0 +1,28 @@
+syntax = "proto3";
+package vm;
+option go_package = "./proto";
+
+service VM {
+    rpc NewProject(NewProjectRequest) returns (NewProjectResponse);
+    rpc ExecuteTask(ExecuteTaskRequest) returns (ExecuteTaskResponse);
+}
+
+message NewProjectRequest {
+    string projectID = 1;
+    string projectVersion = 2;
+    bytes binary = 3;
+    bytes metadata = 4;
+}
+
+message NewProjectResponse {}
+
+message ExecuteTaskRequest {
+    string projectID = 1;
+    string projectVersion = 2;
+    bytes taskID = 3;
+    repeated bytes payloads = 4;
+}
+
+message ExecuteTaskResponse {
+    bytes result = 1;
+}
